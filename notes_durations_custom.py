@@ -8,6 +8,7 @@
 # filename    lengths of notes
 # file.xml 	 [0.5, 1.0, 0.5, 0.75, 0.25, 0.5, ...]
 
+
 # Imports
 import os
 from music21 import *
