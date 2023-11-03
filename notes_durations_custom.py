@@ -17,7 +17,7 @@ from fractions import Fraction
 import csv
 
 # Choose the directory of your data in you Google Drive (instead of ...)
-# os.chdir('/content/drive/MyDrive/...')
+os.chdir('/content/drive/MyDrive/...')
 
 # Helping function for each note
 def add_duration(el, durations, repeated_durations, measure_nr, some_slurs, repetition):
