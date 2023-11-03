@@ -10,7 +10,7 @@ import csv
 # os.chdir('/content/drive/MyDrive/...')
 
 # Funtion: Count of notes and syllables which includes repetitions (only first voice)
-def notes_syllabes_only_first_voice_repetition(specification1='', specification2=''): #Specifications can be added, e.g. filename contains text '2voices', default is no specifications
+def notes_syllables_only_first_voice_repetition(specification1='', specification2=''): #Specifications can be added, e.g. filename contains text '2voices', default is no specifications
   results = []
   # Go through all files in directory
   for file in os.listdir():
@@ -123,7 +123,7 @@ def notes_syllabes_only_first_voice_repetition(specification1='', specification2
 
   return(results)
 
-results = notes_syllabes_only_first_voice_repetition(specification1='', specification2='')
+results = notes_syllables_only_first_voice_repetition(specification1='', specification2='')
 
 # Apply the function
 df = pd.DataFrame(list(results), columns = ['Filename', 'Notes', 'Syllables', 'Syllables/Notes'])
