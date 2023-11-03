@@ -1,5 +1,6 @@
 # Count of all notes, count of all syllables, division of syllable count and note count
 
+# Imports
 import os
 from music21 import *
 import pandas as pd
