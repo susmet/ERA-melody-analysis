@@ -9,7 +9,7 @@ import csv
 # os.chdir('/content/drive/MyDrive/...')
 
 # Returns for each file (takes only first voice): filename, count of notes, count of syllables, division of syllable count and note count
-def notes_syllabes_only_first_voice(specification1='', specification2=''): #Specifications can be added, e.g. filename contains text '2voices', default is no specifications
+def notes_syllables_only_first_voice(specification1='', specification2=''): #Specifications can be added, e.g. filename contains text '2voices', default is no specifications
   results = []
   # Go through all files in directory
   for file in os.listdir():
@@ -37,7 +37,7 @@ def notes_syllabes_only_first_voice(specification1='', specification2=''): #Spec
   return(results)
 
 # Applying the function
-results = notes_syllabes_only_first_voice(specification1='', specification2='')
+results = notes_syllables_only_first_voice(specification1='', specification2='')
 df = pd.DataFrame(list(results), columns = ['Filename', 'Notes', 'Syllables', 'Syllables/Notes'])
 
 # Save the results as a csv file
