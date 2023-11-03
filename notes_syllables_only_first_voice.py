@@ -7,7 +7,7 @@ import pandas as pd
 import csv
 
 # Choose the directory of your data in you Google Drive (instead of ...)
-# os.chdir('/content/drive/MyDrive/...')
+os.chdir('/content/drive/MyDrive/...')
 
 # Returns for each file (takes only first voice): filename, count of notes, count of syllables, division of syllable count and note count
 def notes_syllables_only_first_voice(specification1='', specification2=''): #Specifications can be added, e.g. filename contains text '2voices', default is no specifications
